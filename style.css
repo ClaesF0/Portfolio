@@ -1,0 +1,138 @@
+:root {
+    --bluecrayola: #058ed9;
+    --eggshell: #f4ebd9;
+    --black-coffee: #483d3f;
+    --mulberry-crayola: #d854a5;
+    --medium-grey-grullo: #a39a92;
+    --dark-grey-umber: #77685D;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+
+.body-wrapper {
+    height: 100%;
+   background-image: linear-gradient(180deg, 
+    var(--eggshell), 
+    var(--medium-grey-grullo), 
+    var(--dark-grey-umber), 
+    var(--black-coffee) 100%, 
+    var(--mulberry-crayola) 0);
+}
+/*
+body{
+    
+
+*/
+section {
+    border-radius: 1rem;
+    /*aspect-ratio: 100 / 33;*/
+    /*height: 33vh;*/
+    /*max-width: 100vw;*/
+    box-shadow: -2px 0px 22px 13px rgba(72,61,63,0.77);
+-webkit-box-shadow: -2px 0px 22px 13px rgba(72,61,63,0.77);
+-moz-box-shadow: -2px 0px 22px 13px rgba(72,61,63,0.77);
+    inset: 2rem;
+    margin: 1rem;
+    background-image: linear-gradient(-180deg, 
+    var(--eggshell), 
+    var(--medium-grey-grullo), 150%, 
+    var(--mulberry-crayola) 0);
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-direction: row; 
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+}
+
+section a {
+    text-shadow: 1px 1px 2px #483d3f;
+}
+
+.section-text {
+    font-size: 1rem;
+    width: 40%;
+}
+
+.section-image {
+    box-shadow: 0 0 4rem var(--eggshell);
+    padding: 1rem;
+    width: 60%;
+    border-radius: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;
+    justify-content: center;*/
+    max-width: 1080px;
+    margin: 2rem;
+    width: min(100% - 2rem);
+    margin-inline: auto;
+    padding: 1rem;
+}
+
+.container img {
+        border-radius: 50%;
+        width: 40%;
+        height: 40%;
+        max-width: 200px;
+        box-shadow: 0 0 4rem var(--eggshell);
+    }
+
+.container li {
+    padding: 0.5rem;
+    display: inline-flex;
+}
+
+
+nav {
+    aspect-ratio: 100 / 20;
+    max-height: 15vh;
+    width: 100%;
+    background-color: var(--mulberry-crayola);
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h3 {
+    color: var(--black-coffee);
+}
+
+nav h3,
+a {
+    color: white;
+    padding: 1rem;
+}
+
+footer h3,
+p,
+a {
+    color: white;
+    padding: 1rem;
+}
+
+
+footer {
+    background-color: var(--bluecrayola);
+    aspect-ratio: 100 / 15;
+    max-height: 10vh;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
